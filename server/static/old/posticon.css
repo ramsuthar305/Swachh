@@ -1,0 +1,36 @@
+	/*
+  	Flaticon icon font: post
+  	Creation date: 24/04/2019 22:14
+  	*/
+
+@font-face {
+  font-family: "post";
+  src: url("./post.eot");
+  src: url("./post.eot?#iefix") format("embedded-opentype"),
+       url("./post.woff2") format("woff2"),
+       url("./post.woff") format("woff"),
+       url("./post.ttf") format("truetype"),
+       url("./post.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "post";
+    src: url("./post.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: post;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-link:before { content: "\f100"; }
+.flaticon-picture:before { content: "\f101"; }
+.flaticon-play-button:before { content: "\f102"; }
+.flaticon-file:before { content: "\f103"; }

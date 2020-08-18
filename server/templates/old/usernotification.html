@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Anton|Arimo|Bitter|Cabin|Crimson+Text|Dosis|Fira+Sans|Fjalla+One|Heebo|Hind|Inconsolata|Josefin+Sans|Karla|Lato|Libre+Baskerville|Libre+Franklin|Lora|Merriweather|Montserrat|Muli|Nanum+Gothic|Noto+Sans|Noto+Sans+JP|Noto+Sans+KR|Noto+Serif|Nunito|Nunito+Sans|Open+Sans|Open+Sans+Condensed:300|Oswald|Oxygen|PT+Sans|PT+Sans+Narrow|PT+Serif|Playfair+Display|Poppins|Quicksand|Raleway|Roboto|Roboto+Condensed|Roboto+Mono|Roboto+Slab|Rubik|Slabo+27px|Source+Sans+Pro|Titillium+Web|Ubuntu|Work+Sans&display=swap" rel="stylesheet">
+    <title>notification</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css" />
+    <link rel="stylesheet" href="https:/cdn.quilljs.com/1.3.6/quill.snow.css" />
+
+    <style media="screen">
+      .ql-font-JosefinSans {
+        font-family: "Josefin Sans";
+      }
+      .ql-align-right{
+        text-align: right !important;
+      }
+      .ql-align-center{
+        text-align: center !important;
+      }
+      .ql-align-justify{
+        text-align: justify !important;
+      }
+      .ql-align-left{
+        text-align: left !important;
+      }
+      .ql-font-Karla {
+        font-family: "Karla";
+      }
+      .ql-font-FjallaOne {
+        font-family: "Fjalla One";
+      }
+      .ql-font-Cabin {
+        font-family: "Cabin";
+      }
+
+      .ql-font-roboto {
+        font-family: "Roboto";
+      }
+
+      .ql-font-mirza {
+        font-family: "Mirza";
+      }
+
+      .ql-font-arial {
+        font-family: "Arial";
+      }
+      .ql-font-Dosis {
+        font-family: 'Dosis';
+      }.ql-font-CrimsonText {
+        font-family: 'Crimson Text';
+      }.ql-font-Hind {
+        font-family: 'Hind';
+
+      }.ql-font-Oxygen {
+        font-family: 'Oxygen';
+
+      }.ql-font-LibreBaskerville {
+        font-family: 'Libre Baskerville';
+
+      }.ql-font-Heebo {
+        font-family: 'Heebo';
+
+      }.ql-font-NunitoSans {
+        font-family: 'Nunito Sans';
+
+      }
+    </style>
+  </head>
+  <body>
+    {% include 'header.html' %}
+    <section class="bg-light mx-auto">
+       {% autoescape off %}
+      <div class="container p-4 bg-white">
+        {{notice}}
+      </div>
+      {% endautoescape %}
+    </section>
+  </body>
+</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
