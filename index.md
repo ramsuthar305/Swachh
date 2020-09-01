@@ -11,12 +11,12 @@ dangerous to the country”`:
 happens due to accidents caused by potholes. Most of these potholes were not reported and
 authorities were unaware of it. The use of Swachh will help in reducing these numbers making
 complaint registration transparent and easy. India Times article stating about deaths due to
-potholes is Link to the article.
+potholes is [Link to the article](https://economictimes.indiatimes.com/news/politics-and-nation/supreme-court-takes-note-of-3597-deaths-due-to-pothole-related-accidents-in-2017/articleshow/65858401.cms?from=mdr).
 2. According to the report "Mismanaged waste 'kills up to a million people a year globally' "
 and people becoming ill due to garbage are increasing exponentially. In most cases even if
 people want to report the garbage problem they either do not know where to reach, who to
 contact, lazy to fill a large number of forms, no complain traceability, etc. Swachh puts ends to
-all of these problems. Link of the survey. These problems can be reduced exponentially with
+all of these problems. [Link of the survey](https://www.theguardian.com/environment/2019/may/14/mismanaged-waste-kills-up-to-a-million-people-a-year-globally). These problems can be reduced exponentially with
 the use of Swachh.
 3. Similarly, many viruses and diseases are born due to unreported sewage leakage in the
 country leading to an increase in deaths of common people. Swachh is a platform that reduces
