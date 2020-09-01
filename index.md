@@ -44,4 +44,6 @@ transparent process and complaints can be tracked.
 4. Mongodb Atlas cluster.
 5. HERE maps API.
 
+## License
+[![license](https://img.shields.io/github/license/DAVFoundation/captain-n3m0.svg?style=flat-square)](https://github.com/ramsuthar305/Swachh/blob/master/LICENSE)
 ## Note: This repository is the merged version of both Mobile app and server repository of Swachh.
