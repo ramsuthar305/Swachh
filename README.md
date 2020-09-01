@@ -1,4 +1,4 @@
-# SwachhHab59
+# Swachh
 In developing country like India, people face lots of problem in day today life. Major of them
 are Potholes on the roads, Garbage on the streets, sewage leakage etc. These problems cause
 many accident and thousands of people lose their lives every year. These problems sometimes
