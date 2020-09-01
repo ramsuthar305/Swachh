@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ url_for('static',filename='images/favicon.png')}}">
+    <title>Sahayak</title>
+    
+    <link href="{{ url_for('static',filename='plugins/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    
+ 
+    <link href="{{ url_for('static',filename='plugins/chartist-js/dist/chartist.min.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='plugins/chartist-js/dist/chartist-init.css')}}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css')}}" rel="stylesheet">
+    
+    <link href="{{ url_for('static',filename='plugins/c3-master/c3.min.css')}}" rel="stylesheet">
+    
+    <link href="{{ url_for('static',filename='css/style.css')}}" rel="stylesheet">
+    
+    <link href="{{ url_for('static',filename='css/colors/blue.css')}}" id="theme" rel="stylesheet">
+    
+    
+    
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+ 
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    
+    <div id="main-wrapper">
+        
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-toggleable-sm navbar-light">
+                
+                
+                
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        
+                        <b>
+                  
+                            
+                        </b>
+                        
+                        
+                        <span>
+                         
+                         <img src="{{ url_for('static',filename='images/logo-text.png" alt="Sahayak')}}" class="dark-logo" />
+                         
+                         <img src="{{ url_for('static',filename='images/logo-light-text.png" class="light-logo')}}" alt="Sahayak" /></span> </a>
+                </div>
+                
+                
+                
+                <div class="navbar-collapse">
+                    
+                    
+                    
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                        <li class="nav-item"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                            
+                        
+                    </ul>
+                    
+                    
+                    
+                    <ul class="navbar-nav my-lg-0">
+                        
+                        
+                        
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-message"></i>
+                                <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+                            </a>
+                            
+                        </li>
+                        
+           <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img src="{{ url_for('static',filename='images/users/1.jpg')}}" alt="user" class="profile-pic" /></a>
+                            <div class="dropdown-menu dropdown-menu-right scale-up">
+                                <ul class="dropdown-user">
+                                    <li>
+                                        <div class="dw-user-box">
+                                            <div class="u-img"><img src="{{ url_for('static',filename='images/users/1.jpg')}}" alt="user"></div>
+                                            <div class="u-text">
+                                                <h4>Steave Jobs</h4>
+                                                <p class="text-muted">varun@gmail.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+                                        </div>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
+                                    <li><a href="#"><i class="ti-wallet"></i> My Balance</a></li>
+                                    <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                                </ul>
+                            </div>
+                        </li>
+            
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        
+        
+        
+        
+        
+        
+        {% include "sidebar.html" %}
+        
+        
+        
+        
+        
+        
+        <div class="page-wrapper">
+            
+            
+            
+            <div class="container-fluid">
+                
+                
+                
+                <div class="row page-titles">
+                    <div class="col-md-5 col-8 align-self-center">
+                        <h3 class="text-themecolor">Dashboard</h3>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+                            <li class="breadcrumb-item active">Dashboard</li>
+                        </ol>
+                    </div>
+                    
+                </div>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                <div class="row">
+                    
+                    <div class="col-lg-8 col-md-7">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex flex-wrap">
+                                            <div>
+                                                <h3 class="card-title">Total grievance reported</h3>
+                                               </div>
+                                            <div class="ml-auto">
+                                                <ul class="list-inline">
+                                                <li>
+                                                        <h6 class=" text-primary" style="color:#1e88e5;"><i class="fa fa-circle font-10 m-r-10 "></i>Garbage</h6> </li>
+                                                    <li>
+                                                        <h6 class="text-success"><i class="fa fa-circle font-10 m-r-10 "></i>Seewage</h6> </li>
+                                                    <li>
+                                                        <h6 class=" text-warning"><i class="fa fa-circle font-10 m-r-10"></i>Potholes</h6> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="amp-pxl" style="height: 382px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <div class="card">
+                            <div class="card-block">
+                                <h3 class="card-title">Grievances reported</h3>
+                                <h6 class="card-subtitle">Year 2019</h6>
+                                <div id="visitor" style="height:290px; width:100%;"></div>
+                            </div>
+                            <div>
+                                <hr class="m-t-0 m-b-0">
+                            </div>
+                            <div class="card-block text-center ">
+                                <ul class="list-inline m-b-0">
+                                    <li>
+                                        <h6 class="text-primary"><i class="fa fa-circle font-10 m-r-10 "></i>Garbage</h6> </li>
+                                    
+                                    <li>
+                                        <h6 class="text-info"><i class="fa fa-circle font-10 m-r-10 "></i>Seewage</h6> </li>
+                                    <li>
+                                        <h6 class="text-warning"><i class="fa fa-circle font-10 m-r-10"></i>Potholes</h6> </li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                    
+                    
+                    <div class="col-lg-12 col-xlg-12 col-md-12">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="d-flex flex-wrap">
+                                    <div>
+                                        <h3 class="card-title">Solved vs Pending</h3>
+                                        <h6 class="card-subtitle">Annual year 2019</h6> 
+                                    </div>
+                                    <div class="ml-auto align-self-center">
+                                        <ul class="list-inline m-b-0">
+                                            <li>
+                                                <h6 class="text-muted text-success"><i class="fa fa-circle font-10 m-r-10 "></i>Grievances solved</h6> </li>
+                                            <li>
+                                                <h6 class="text-muted text-info"><i class="fa fa-circle font-10 m-r-10"></i>Grievances Pending</h6> </li>
+
+                                        </ul>
+                                    </div>
+                                    
+                                </div> 
+                                <div class="campaign ct-charts"></div>
+                                <div class="row text-center">
+                                    <div class="col-lg-4 col-md-4 m-t-20"><h1 class="m-b-0 font-light">{{ totalgarbage }}</h1><small>Total Garbage</small></div>
+                                    <div class="col-lg-4 col-md-4 m-t-20"><h1 class="m-b-0 font-light">{{totalsewage}}</h1><small>Total Sewage</small></div>
+                                    <div class="col-lg-4 col-md-4 m-t-20"><h1 class="m-b-0 font-light">{{totalpothole}}</h1><small>Total Potholes</small></div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>    
+                </div> 
+                
+                 
+                
+                
+                
+                
+                
+                
+                
+                <div class="right-sidebar">
+                    <div class="slimscrollright">
+                        <div class="rpanel-title"> Service Panel <span><i class="ti-close right-side-toggle"></i></span> </div>
+                        <div class="r-panel-body">
+                            <ul id="themecolors" class="m-t-20">
+                                <li><b>With Light sidebar</b></li>
+                                <li><a href="javascript:void(0)" data-theme="default" class="default-theme">1</a></li>
+                                <li><a href="javascript:void(0)" data-theme="green" class="green-theme">2</a></li>
+                                <li><a href="javascript:void(0)" data-theme="red" class="red-theme">3</a></li>
+                                <li><a href="javascript:void(0)" data-theme="blue" class="blue-theme working">4</a></li>
+                                <li><a href="javascript:void(0)" data-theme="purple" class="purple-theme">5</a></li>
+                                <li><a href="javascript:void(0)" data-theme="megna" class="megna-theme">6</a></li>
+                                <li class="d-block m-t-30"><b>With Dark sidebar</b></li>
+                                <li><a href="javascript:void(0)" data-theme="default-dark" class="default-dark-theme">7</a></li>
+                                <li><a href="javascript:void(0)" data-theme="green-dark" class="green-dark-theme">8</a></li>
+                                <li><a href="javascript:void(0)" data-theme="red-dark" class="red-dark-theme">9</a></li>
+                                <li><a href="javascript:void(0)" data-theme="blue-dark" class="blue-dark-theme">10</a></li>
+                                <li><a href="javascript:void(0)" data-theme="purple-dark" class="purple-dark-theme">11</a></li>
+                                <li><a href="javascript:void(0)" data-theme="megna-dark" class="megna-dark-theme ">12</a></li>
+                            </ul>
+                            <ul class="m-t-20 chatonline">
+                                <li><b>Chat option</b></li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="{{ url_for('static',filename='images/users/1.jpg')}}" alt="user-img" class="img-circle"> <span>Varun Dhavan <small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="{{ url_for('static',filename='images/users/2.jpg')}}" alt="user-img" class="img-circle"> <span>Genelia Deshmukh <small class="text-warning">Away</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="{{ url_for('static',filename='images/users/3.jpg')}}" alt="user-img" class="img-circle"> <span>Ritesh Deshmukh <small class="text-danger">Busy</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="{{ url_for('static',filename='images/users/4.jpg')}}" alt="user-img" class="img-circle"> <span>Arijit Sinh <small class="text-muted">Offline</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="{{ url_for('static',filename='images/users/5.jpg')}}" alt="user-img" class="img-circle"> <span>Govinda Star <small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="{{ url_for('static',filename='images/users/6.jpg')}}" alt="user-img" class="img-circle"> <span>John Abraham<small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="{{ url_for('static',filename='images/users/7.jpg')}}" alt="user-img" class="img-circle"> <span>Hritik Roshan<small class="text-success">online</small></span></a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)"><img src="{{ url_for('static',filename='images/users/8.jpg')}}" alt="user-img" class="img-circle"> <span>Pwandeep rajan <small class="text-success">online</small></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+            
+            
+            
+            
+            
+            
+            
+            <footer class="footer"> © 2019 Sahayak </footer>
+            
+            
+            
+        </div>
+        
+        
+        
+    </div>
+    
+    
+    
+    
+    
+    
+    <script src="{{ url_for('static',filename='plugins/jquery/jquery.min.js')}}"></script>
+    
+    <script src="{{ url_for('static',filename='plugins/bootstrap/js/tether.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='plugins/bootstrap/js/bootstrap.min.js')}}"></script>
+    
+    
+    <script src="{{ url_for('static',filename='js/jquery.slimscroll.js')}}"></script>
+    
+    <script src="{{ url_for('static',filename='js/waves.js')}}"></script>
+    
+    <script src="{{ url_for('static',filename='js/sidebarmenu.js')}}"></script>
+    
+    <script src="{{ url_for('static',filename='plugins/sticky-kit-master/dist/sticky-kit.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='plugins/sparkline/jquery.sparkline.min.js')}}"></script>
+    
+    
+    <script src="{{ url_for('static',filename='js/custom.min.js')}}"></script>
+    
+    
+    
+    
+    <script src="{{ url_for('static',filename='plugins/chartist-js/dist/chartist.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='plugins/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.min.js')}}"></script>
+    
+    <script src="{{ url_for('static',filename='plugins/d3/d3.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='plugins/c3-master/c3.min.js')}}"></script>
+    
+
+    <script src="{{ url_for('static',filename='js/dashboard1.js')}}"></script>
+    <script>
+    var garbage =  {{ garbage }};
+    var Seewage = {{ seewage }};
+    var Pothole = {{ pothole }};
+    var solved = {{ solved }};
+    var unsolved = {{ unsolved }};
+    var totalpothole = {{ totalpothole }};
+    var totalgarbage = {{ totalgarbage }};
+    var totalsewage = {{ totalsewage }};
+    </script>
+
+    <script src="{{ url_for('static',filename='plugins/styleswitcher/jQuery.style.switcher.js')}}"></script>
+</body>
+
+</html>

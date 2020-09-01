@@ -1,0 +1,66 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 25/04/2019 19:18
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff2") format("woff2"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-link:before { content: "\f100"; }
+.flaticon-blueprint:before { content: "\f101"; }
+.flaticon-chip:before { content: "\f102"; }
+.flaticon-molecular:before { content: "\f103"; }
+.flaticon-personality:before { content: "\f104"; }
+.flaticon-broadcast:before { content: "\f105"; }
+.flaticon-coffee-maker:before { content: "\f106"; }
+.flaticon-network:before { content: "\f107"; }
+.flaticon-experiment:before { content: "\f108"; }
+.flaticon-fine-arts:before { content: "\f109"; }
+.flaticon-picture:before { content: "\f10a"; }
+.flaticon-play-button:before { content: "\f10b"; }
+.flaticon-file:before { content: "\f10c"; }
+    
+    $font-Flaticon-link: "\f100";
+    $font-Flaticon-blueprint: "\f101";
+    $font-Flaticon-chip: "\f102";
+    $font-Flaticon-molecular: "\f103";
+    $font-Flaticon-personality: "\f104";
+    $font-Flaticon-broadcast: "\f105";
+    $font-Flaticon-coffee-maker: "\f106";
+    $font-Flaticon-network: "\f107";
+    $font-Flaticon-experiment: "\f108";
+    $font-Flaticon-fine-arts: "\f109";
+    $font-Flaticon-picture: "\f10a";
+    $font-Flaticon-play-button: "\f10b";
+    $font-Flaticon-file: "\f10c";

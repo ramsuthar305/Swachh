@@ -1,0 +1,39 @@
+
+
+<aside class="left-sidebar">
+   <div class="scroll-sidebar">
+      <div class="user-profile" style="background: url({{ url_for('static',filename='images/background/user-info.jpg')}}">
+         <div class="profile-img"> <img src="{{ url_for('static',filename='images/users/profile.png')}}"  alt="user" /> </div>
+         <div class="profile-text">
+            <a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">{{ session['admin_area'] }}</a>
+            <div class="dropdown-menu animated flipInY">    
+               <a href="/logout/" class="dropdown-item"><i class="fa fa-power-off"></i> Logout</a>
+            </div>
+         </div>
+      </div>
+      <nav class="sidebar-nav">
+         <ul id="sidebarnav">
+            <li class="nav-small-cap">Dashboard</li>
+            <li>
+               <a class="waves-effect waves-dark" href="/reports" aria-expanded="false"><i class="mdi mdi-gauge"></i><span class="hide-menu">Reports </span></a>
+            </li>
+            <li>
+               <a class=" waves-effect waves-dark" href="/index" aria-expanded="false"><i class="mdi mdi-alert"></i>View Problems</a>
+            </li>
+            <li>
+               <a class=" waves-effect waves-dark" href="/records" aria-expanded="false"><i class="mdi mdi-view-grid"></i>Records</a>
+            </li>
+            <li>
+               <a class=" waves-effect waves-dark" href="/sewage" aria-expanded="false"><i class="mdi mdi-alert-circle"></i>Sewage</a>
+            </li>
+            <li>
+               <a class=" waves-effect waves-dark" href="/garbage" aria-expanded="false"><i class="mdi mdi-alert-octagon"></i>Garbage</a>
+            </li>
+            <li>
+               <a class=" waves-effect waves-dark" href="/potholes" aria-expanded="false"><i class="mdi mdi-alert-octagram"></i>Potholes</a>
+            </li>
+         </ul>
+      </nav>
+   </div>
+</aside>
+

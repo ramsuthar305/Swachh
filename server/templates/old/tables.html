@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Researchers Database</title>
+  {% include 'links.html' %}
+</head>
+<body class="">
+  <div class="wrapper ">
+    <div class="sidebar" data-color="white" data-active-color="danger">
+      <!--
+        Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
+    -->
+      <div class="logo">
+        <a href="#" class="simple-text logo-mini">
+          <div class="logo-image-small">
+            <img src="../assets/img/logo-small.png">
+          </div>
+        </a>
+        <a href="#" class="simple-text logo-normal">
+          Creative Tim
+          <!-- <div class="logo-image-big">
+            <img src="../assets/img/logo-big.png">
+          </div> -->
+        </a>
+      </div>
+      {% include 'adminSidebar.html' %}
+    </div>
+    <div class="main-panel">
+      <!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+        <div class="container-fluid">
+          <div class="navbar-wrapper">
+            <div class="navbar-toggle">
+              <button type="button" class="navbar-toggler">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
+              </button>
+            </div>
+            <a class="navbar-brand" id="page_name" href="#pablo">Researchers Database</a>
+          </div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+            <span class="navbar-toggler-bar navbar-kebab"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link btn-magnify" href="#pablo">
+                  <i class="nc-icon nc-layout-11"></i>
+                  <p>
+                    Admin
+                  </p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn-magnify" data-toggle="modal" data-target="#notificationmodal" >
+                  <i class="mdi mdi-bell" style="font-size:24px;"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>      <!-- End Navbar -->
+      <!-- <div class="panel-header panel-header-sm">
+
+
+</div> -->
+
+
+      <div class="content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="">
+              <div class="d-flex flex-row-reverse" align="right">
+                <div class="p-2">
+                  <div class="dropdown">
+                    <button class="btn btn-link dropdown-toggle"  type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="result"> Year</span>
+                    </button>
+                    <div class="dropdown-menu" id="batch" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" onclick="reply_click(this.innerHTML)" id="1" href="#">2016</a>
+                      <a class="dropdown-item" onclick="reply_click(this.innerHTML)" id="2" href="#">2017</a>
+                      <a class="dropdown-item" onclick="reply_click(this.innerHTML)" href="#">2018</a>
+                      <a class="dropdown-item" onclick="reply_click(this.innerHTML)" href="#">2019</a>
+                      <a class="dropdown-item" onclick="reply_click(this.innerHTML)" href="#">2020</a>
+
+                      <script type="text/javascript">
+                      function reply_click(content)
+                      {
+                          content="<span class='text-primary pr-2'>"+content+"</span>"
+                          document.getElementById("result").innerHTML="Year: "+content;
+                      }
+                      </script>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-2">
+                  <div class="dropdown">
+                    <button class="btn btn-link btn-block dropdown-toggle"  type="button"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span id="supr"> Type</span>
+                    </button>
+                    <div class="dropdown-menu" id="batch" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" onclick="sup(this.innerHTML)" id="1" href="#">Garbage</a>
+                      <a class="dropdown-item" onclick="sup(this.innerHTML)" id="2" href="#">Pothole</a>
+                      <a class="dropdown-item" onclick="sup(this.innerHTML)" href="#">Accident</a>
+                    </div>
+                    <script type="text/javascript">
+                    function dept(content)
+                    {
+
+                        content="<span class='text-primary pr-2'>"+content+"</span>"
+                        document.getElementById("dep").innerHTML=content;
+                    }
+                    </script>
+                  </div>
+                </div>
+                <div class="p-2">
+                  <div class="dropdown">
+                    <button class="btn btn-link dropdown-toggle" type="button" id="dep" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Department
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" onclick="dept(this.innerHTML)" href="#">Engineering</a>
+                      <a class="dropdown-item" onclick="dept(this.innerHTML)" href="#">Bio technology</a>
+                      <a class="dropdown-item" onclick="dept(this.innerHTML)" href="#">Film and Television</a>
+                      <a class="dropdown-item" onclick="dept(this.innerHTML)" href="#">Broadcast and Journalism</a>
+                      <a class="dropdown-item" onclick="dept(this.innerHTML)" href="#">Food technology</a>
+                      <a class="dropdown-item" onclick="dept(this.innerHTML)" href="#">Marine Engineering</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table" style="width: 200%;">
+                    <thead class=" text-primary">
+                      <th class="border text-center bg-dark text-light rounded" colspan="4">
+                        Sr No.
+                      </th>
+                      <th class="border text-center bg-dark text-light rounded" colspan="4">
+                        Image
+                      </th>
+                      <th class="border text-center bg-dark text-light rounded" colspan="4">
+                        Uploaded by
+                      </th>
+                      <th class="border text-center bg-dark text-light rounded" colspan="4">
+                        Upload time
+                      </th>
+                      <th class="border text-center bg-dark text-light rounded" colspan="4">
+                        Type
+                      </th>
+                      <th class="border text-center bg-dark text-light rounded" colspan="4">
+                        Assigned to
+                      </th>
+                      <th class="border text-center bg-dark text-light rounded" colspan="4">
+                        Assignment Date
+                      </th>
+                      <th class="border text-center bg-dark text-light rounded" colspan="4">
+                        Status
+                      </th>
+
+
+                    </thead>
+                    <tbody>
+{% for i in all %}
+                      <tr>
+
+                        <td class="text-center border" colspan="4">
+                          {{i.grievance_id}}
+                        </td>
+                        <td class="text-center border" colspan="4">
+
+                          <img onmouseover="bigImg()" onmouseout="closeimg()" src='data:image/jpeg;base64, {{i.image_link}}' style="height:60px;"alt="">
+
+                              <script type="text/javascript">
+                                function bigImg(){
+                                  $('#{{grievance_id}}').modal('show');
+                                  console.log('hii');
+                                }
+
+
+                              </script>
+
+                              <!-- Modal -->
+                              <div class="modal fade" id="{{grievance_id}}" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <img src="{{i.image_link}}">
+
+                                </div>
+                              </div>
+                                                      </td>
+
+                              <script type="text/javascript">
+                              function closeimg(){
+                                $('#{{i.grievance_id}}').modal('hide');
+                              }
+                              </script>
+                        <td class="text-center border" colspan="4">
+                          {{i.user_id}}
+                        </td>
+                        <td class="text-center border" colspan="4">
+                          {{i.assigned_date}}
+                        </td>
+                        <td class="text-center border" colspan="4">
+                        {{i.grievance_type}}
+                        </td>
+                        <td class="text-center border" colspan="4">
+                        {{i.assigned_authority}}
+                        </td>
+                        <td class="text-center border" colspan="4">
+                        {{i.assigned_date}}
+                        </td>
+                        <td class="text-center border" colspan="4">
+                          Unresolved
+                        </td>
+
+
+                      </tr>
+                      {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+  </div>
+
+  <script type="text/javascript">
+
+
+
+
+
+    function sup(content)
+    {
+
+        content="<span class='text-primary pr-2'>"+content+"</span>"
+        document.getElementById("supr").innerHTML="Type : "+content;
+    }
+  </script>
+  {% include 'script_vagera.html' %}
+  {% include 'notification_modal.html' %}
+</body>
+
+</html>

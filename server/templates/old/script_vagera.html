@@ -1,0 +1,23 @@
+
+<script src="{{ url_for('static',filename= 'assets/js/core/jquery.min.js') }}"></script>
+<script src="{{ url_for('static',filename= 'assets/js/core/popper.min.js') }}"></script>
+<script src="{{ url_for('static',filename= 'assets/js/core/bootstrap.min.js') }}"></script>
+<script src="{{ url_for('static',filename= 'assets/js/plugins/perfect-scrollbar.jquery.min.js') }}"></script>
+<script src="{{ url_for('static',filename= 'assets/js/plugins/bootstrap-notify.js') }}"></script>
+<script src="{{ url_for('static',filename= 'assets/js/paper-dashboard.min.js') }}" type="text/javascript"></script>
+<script type="text/javascript">
+    function myf() {
+            var x=document.getElementsByClassName("active");
+
+            document.getElementById(x[0].id).className=""
+            var a=document.getElementById("page_name").innerHTML;
+
+            var a=document.getElementById("page_name").innerHTML;
+
+            document.getElementById(a).classList.add('active');
+
+
+
+    }
+    window.onload = myf;
+</script>

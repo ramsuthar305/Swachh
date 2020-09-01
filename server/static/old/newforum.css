@@ -1,0 +1,146 @@
+
+
+.form_w {
+	border-bottom: 3px solid #dc3545;
+	width:30%;
+}
+
+.form-c {
+	border:none;
+	width:90%;
+	padding:1.5%;
+}
+
+.search_button {
+	background: none;
+	border: none;
+
+}
+
+.search_button:focus{
+	outline: none;
+	border-color:transparent;
+ 	outline: none !important;
+   box-shadow: none;
+}
+
+.search_button:active{
+	outline: none;
+	border-color:transparent;
+	 outline: none !important;
+   box-shadow: none;
+}
+.start_thread{
+	color:white;
+	font-size: 18px;
+	width:68%;
+	margin-left: 4%;
+}
+
+.start_thread:hover{
+	color: black;
+}
+
+.left_one {
+	padding: 1%;
+	padding-top:2%;
+
+}
+
+.categories button{
+	border: none;
+	font-size: 15px;
+	color: black;
+	padding: 2%;
+}
+
+.user img{
+	height:55px;
+	width:55px;
+}
+
+.contents {
+	text-align: justify;
+	padding: 2%;
+	padding-left:3%;
+	padding-right: 3%;
+}
+
+.like a{
+	padding-left: 3%;
+	padding-right: 3%;
+	font-size: 20px;
+	color:#6c757d;
+}
+
+.like a span{
+	font-size: 12px;
+}
+
+.like a:hover{
+	text-decoration: none;
+	color: #339af0;
+}
+
+.comment img{
+	height: 40px;
+	width:40px;
+	padding-top: 2%;
+}
+
+.comment_box {
+	border-radius: 50px;
+	padding:1%;
+	padding-left: 1.5%;
+	overflow-y: visible;
+}
+
+textarea{
+  /* box-sizing: padding-box; */
+
+  /* demo only: */
+  padding:2%;
+  width:100%;
+  font-size:14px;
+  display:inline-block;
+	height: 40px;
+	color:#6c757d;
+	border-radius: 5px;
+  overflow:hidden;
+}
+
+.comment_btn {
+	width: 100%;
+
+}
+
+.hidden {
+	display:none;
+
+}
+
+
+
+.categories a{
+	text-align: left;
+	padding-left: 10%;
+	border: none;
+	font-size: 16px;
+	background-color:#FAFAFA;
+}
+
+.categories i{
+	height: 30px;
+	padding: 1%;
+	padding-right:5%;
+}
+
+.categories {
+	padding-left: 6%;
+	padding-right: 6%;
+
+}
+
+.categories a:hover{
+	color:white;
+}

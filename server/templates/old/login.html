@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/4.1.95/css/materialdesignicons.css" integrity="sha256-QfuOJ3PVsG8gvmJRt+sCKbq5C5j/RgerBSxNrOlCkDo=" crossorigin="anonymous" />
+      <title>Edit user</title>
+      {% include 'links.html' %}
+      <style>
+         .card-horizontal {
+         display: flex;
+         flex: 1 1 auto;
+         }
+      </style>
+   </head>
+      <div class="wrapper ">
+         
+         <div class="main-panel">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
+               <div class="container-fluid">
+                  <div class="navbar-wrapper">
+                     <div class="">
+                     </div>
+                     <a class="navbar-brand" id="page_name" href="#pablo">Login Grivience System</a>
+                  </div>
+                  
+               </div>
+            </nav>
+            <!-- End Navbar -->
+            <!-- <div class="panel-header panel-header-lg">
+               </div> -->
+            <div class="content container-fluid ">
+               <div class="bg-white rounded shadow-sm">
+                  <div class="container-fluid">
+                     
+                        <h3>Welcome Back</h3>
+                        <p>You can sign in with your username</p>
+                                                   {% if CONTEXT_msg %}
+                            <p style="color: red;text-align: center;">{{ CONTEXT_msg }}</p>
+                                {% endif %}
+                        <form method="POST" action="/login">
+                            <div class="form-group">
+                                    <input id="user_name" name="email" type="text" placeholder="Enter your registered email-id or contact no." style="width:20%">
+                            </div>
+
+                            <div class="form-group">
+                                    <input name="pass" id="pass" name="pass" type="password" placeholder="Enter your password." style="width:20%">
+                            </div>
+                            <div class="form-group">
+                                    <input name="submit" id="submit" name="submit" type="submit" value="Submit">
+                            </div>
+
+                        </form>
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+      </div>
+      </div>
+      <!--   Core JS Files   -->
+
+      {% include 'script_vagera.html' %}
+      {% include 'notification_modal.html' %}
+   </body>
+</html>
